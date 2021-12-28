@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 360
     class Config:
-        env_file = '.env'
+        env_file = '../.env'
 
 settings = Settings()
 
