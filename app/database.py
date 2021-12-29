@@ -6,7 +6,7 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 import time
 
-SQLALCHEMY_DATABASE_URL = f'postgit gresql://{settings.database_username}:{settings.database_password}' \
+SQLALCHEMY_DATABASE_URL = f'postgresql://{settings.database_username}:{settings.database_password}' \
                           f'@{settings.database_hostname}/{settings.database_name}'
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
