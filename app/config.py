@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     algorithm: str
     access_token_expire_minutes: int = 360
     class Config:
-        env_file = '.env'
+        env_file = '../.env'
 
 settings = Settings()
 
@@ -24,3 +24,4 @@ settings = Settings()
 # access_token_expire_minutes: int = 360
 # class Config:
 #     env_file = '.env'
+

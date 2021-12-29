@@ -11,8 +11,9 @@ from app.config import settings
 # access to the values within the .ini file in use.
 config = context.config
 config.set_main_option('sqlalchemy.url',
-'postgresql://postgres:Paul1996!@localhost:5432/fastapi'
+    f'postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}/{settings.database_name}'
 )
+
 
 #       mysql+pymysql://<username>:<password>@<host>/<dbname>[?<options>]
 # Interpret the config file for Python logging.
